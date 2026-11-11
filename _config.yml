@@ -1,2 +1,2 @@
 permalink: /blog/:title/
-exclude:[readme.md]
+exclude: [readme.md]
