@@ -1,8 +1,5 @@
-* { 
-    font-family: "Comic Sans MS", "Comic Neue", sans-serif;
-}
-
 body {
+    font-family: "Comic Sans MS", "Comic Neue", sans-serif;
     max-width: 40rem;
     padding: 0 1rem;
     line-height: 1.6;
