@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+        <title>{{ page.title }} | Andrew Kim</title>
+        <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <p><a href="/blog.html">back to all blogs</a></p>
+        <h1>{{ page.title }}</h1>
+        <p><i>{{ page.date | date: "%b %-d, %Y" }}</i></p>
+        {{ content }}
+    </body>
+</html>

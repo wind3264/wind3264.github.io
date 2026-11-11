@@ -4,22 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-        <title>Andrew Kim</title>
-        <style>
-            /* css goes here */
-            * { 
-                font-family: "Comic Sans MS", "Comic Neue", sans-serif; 
-            }
-
-            body {
-                max-width: 40rem;
-                padding: 0 1rem;
-                line-height: 1.6;
-                margin: 3rem auto;
-            }
-        </style>
+        <title>blog - Andrew Kim</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        no blog posts yet...
+        <h1>blog</h1>
+        <ul>
+            {% for post in site.posts %}
+            <li>{{ post.date | date: "%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
